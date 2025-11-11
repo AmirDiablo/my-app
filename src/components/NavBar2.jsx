@@ -4,11 +4,11 @@ import Logo from "../assets/UniLogo.png"
 const NavBar2 = () => {
 
     const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Dorm', path: '/dorm' },
-        { name: 'Course', path: '/course' },
-        { name: 'Contact', path: '/' },
-        { name: 'About', path: '/' },
+        { name: 'Home', path: 'https://amirdiablo.github.io/my-app/' },
+        { name: 'Dorm', path: 'https://amirdiablo.github.io/my-app/dorm' },
+        { name: 'Course', path: 'https://amirdiablo.github.io/my-app/course' },
+        { name: 'Contact', path: 'https://amirdiablo.github.io/my-app/' },
+        { name: 'About', path: 'https://amirdiablo.github.io/my-app/' },
     ];
 
     const ref = useRef(null)
@@ -30,7 +30,7 @@ const NavBar2 = () => {
             <nav className={`fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
 
                 {/* Logo */}
-                <a href="http://localhost:5173" className="flex items-center gap-2">
+                <a href="https://amirdiablo.github.io/my-app/" className="flex items-center gap-2">
                     <img className="w-10 bg-white rounded-2xl" src={Logo} />
                 </a>
 
