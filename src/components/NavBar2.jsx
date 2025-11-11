@@ -6,6 +6,7 @@ const NavBar2 = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Dorm', path: '/dorm' },
+        { name: 'Course', path: '/course' },
         { name: 'Contact', path: '/' },
         { name: 'About', path: '/' },
     ];
@@ -41,9 +42,9 @@ const NavBar2 = () => {
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>
                     ))}
-                    <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
+                    {/* <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
                         New Launch
-                    </button>
+                    </button> */}
                 </div>
 
                 {/* Desktop Right */}
@@ -81,13 +82,13 @@ const NavBar2 = () => {
                         </a>
                     ))}
 
-                    <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
+                    {/* <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
                         New Launch
                     </button>
 
                     <button className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
                         Login
-                    </button>
+                    </button> */}
                 </div>
             </nav>
         </div>

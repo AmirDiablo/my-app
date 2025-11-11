@@ -5,9 +5,11 @@ import dorm3 from "../assets/assets/dorm3.jpg"
 import dorm4 from "../assets/assets/dorm4.jpg"
 import dorm5 from "../assets/assets/dorm5.jpg"
 import dorm6 from "../assets/assets/dorm6.jpg"
+import { useNavigate } from 'react-router-dom';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const navigate = useNavigate()
 
   const images = [
     { id: 1, src: dorm1, title: 'اتاق‌های استراحت' },
@@ -39,6 +41,7 @@ const Gallery = () => {
                 src={image.src} 
                 alt={image.title}
                 className="w-full h-48 object-cover hover:scale-105 transition duration-300"
+                onClick={()=> {navigate("/dorm/restroom"), scrollTo(0, 0)}}
               />
               <div className="p-4">
                 <h3 className="font-semibold text-gray-800">{image.title}</h3>

@@ -9,6 +9,8 @@ import InstructorDetails from "./pages/InstructorDetails"
 import TouristAttractions from "./pages/TouristAttractions"
 import Doorm from "./pages/Doorm"
 import Dorm2 from "./pages/Dorm2"
+import DormDetails from "./pages/DormDetails"
+import Course from "./pages/Course"
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/touristAttractions/:name" element={<TouristAttractionsDetails />} />
           <Route path="/instructors/:name" element={<InstructorDetails />} />
           <Route path="/dorm" element={<Dorm2 />} />
+          <Route path="/dorm/:place" element={<DormDetails />} />
+          <Route path="/course" element={<Course />} />
         </Routes>
       <Footer />
       </BrowserRouter>
