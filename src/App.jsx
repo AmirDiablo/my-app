@@ -11,6 +11,7 @@ import Doorm from "./pages/Doorm"
 import Dorm2 from "./pages/Dorm2"
 import DormDetails from "./pages/DormDetails"
 import Course from "./pages/Course"
+import NotFound from "./pages/NotFound"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/dorm" element={<Dorm2 />} />
           <Route path="/dorm/:place" element={<DormDetails />} />
           <Route path="/course" element={<Course />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer />
       </BrowserRouter>
